@@ -6,7 +6,7 @@ namespace ParrotApp {
     public bool HearWord() {
       Console.WriteLine("Braawwwkk what did you say?");
       wordHear = Console.ReadLine();
-      if (wordHear != "shutup") {
+      if (wordHear.ToLower() != "shutup") {
         return true;
       }
       return false;
